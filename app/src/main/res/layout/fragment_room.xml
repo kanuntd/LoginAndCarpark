@@ -50,7 +50,6 @@
         android:id="@+id/roomButton3"
         android:layout_width="97dp"
         android:layout_height="52dp"
-        android:layout_margin="@dimen/maginTop"
         android:layout_marginTop="16dp"
         android:background="@color/colorBlue"
         android:fontFamily="@font/baloo_bhai"
