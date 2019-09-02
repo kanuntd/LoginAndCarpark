@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">LoginAndCarpark</string>
+    <string name="carPark">Car Parking</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="empty">Empty</string>
+    <string name="delete">DELETE</string>
+    <string name="update">UPDATE</string>
+    <string name="your">Your Info</string>
+</resources>
