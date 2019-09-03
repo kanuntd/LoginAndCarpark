@@ -16,4 +16,5 @@
     <string name="carId">car id</string>
     <string name="brand">brand</string>
     <string name="noLogin">Username or Password is not match!</string>
+    <string name="busy">Busy</string>
 </resources>

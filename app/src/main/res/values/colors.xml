@@ -5,6 +5,6 @@
     <color name="colorAccent">#D81B60</color>
     <color name="colorBlue">#AACCDD</color>
     <color name="colorPink">#CCAAAA</color>
-    <color name="colorDelet">#CC5566</color>
+    <color name="colorDelete">#CC5566</color>
     <color name="colorUpdate">#CC9966</color>
 </resources>
