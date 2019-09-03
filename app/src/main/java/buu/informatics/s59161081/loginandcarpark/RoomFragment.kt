@@ -14,6 +14,11 @@ import buu.informatics.s59161081.loginandcarpark.databinding.FragmentRoomBinding
  * A simple [Fragment] subclass.
  */
 class RoomFragment : Fragment() {
+    private val carParking0 = CarParking(0)
+    private val carParking1 = CarParking(1)
+    private val carParking2 = CarParking(2)
+    private val carParkings = arrayOf(carParking0,carParking1,carParking2)
+
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
