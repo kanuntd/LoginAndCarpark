@@ -16,8 +16,8 @@ import kotlinx.android.synthetic.main.fragment_login.*
  * A simple [Fragment] subclass.
  */
 class LoginFragment : Fragment() {
-    private val username= ""
-    private val password = ""
+    private val username= "admin"
+    private val password = "admin"
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {

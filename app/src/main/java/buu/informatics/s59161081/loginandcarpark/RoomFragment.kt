@@ -43,6 +43,9 @@ class RoomFragment : Fragment() {
             updateButton.setOnClickListener{view ->
                 updateRoom(view)
             }
+            deleteButton.setOnClickListener{view ->
+                deleteRoom(view)
+            }
 
         }
         setHasOptionsMenu(true)
@@ -77,19 +80,41 @@ class RoomFragment : Fragment() {
         val carPark = carParkings?.get(currentIndex)
         carPark.status = false
         binding.apply {
+            if(nameEditText.text.toString()!=""&&caridEditText.text.toString()!=""&&brandEditText.text.toString()!=""){
+                if(currentIndex==0){
+                    roomButton1.setText(R.string.busy)
+                    roomButton1.setBackgroundColor(Color.parseColor("#CCAAAA"))
+                }else if(currentIndex==1){
+                    roomButton2.setText(R.string.busy)
+                    roomButton2.setBackgroundColor(Color.parseColor("#CCAAAA"))
+                }else{
+                    roomButton3.setText(R.string.busy)
+                    roomButton3.setBackgroundColor(Color.parseColor("#CCAAAA"))
+                }
+                invalidateAll()
+            }
+
+        }
+    }
+    private fun deleteRoom(view: View){
+        val carPark = carParkings?.get(currentIndex)
+        carPark.status = true
+        carPark.name = ""
+        carPark.brand = ""
+        carPark.carId = ""
+        binding.apply {
             if(currentIndex==0){
-                roomButton1.setText(R.string.busy)
-                roomButton1.setBackgroundColor(Color.parseColor("#CCAAAA"))
+                roomButton1.setText(R.string.empty)
+                roomButton1.setBackgroundColor(Color.parseColor("#AACCDD"))
             }else if(currentIndex==1){
-                roomButton2.setText(R.string.busy)
-                roomButton2.setBackgroundColor(Color.parseColor("#CCAAAA"))
+                roomButton2.setText(R.string.empty)
+                roomButton2.setBackgroundColor(Color.parseColor("#AACCDD"))
             }else{
-                roomButton3.setText(R.string.busy)
-                roomButton3.setBackgroundColor(Color.parseColor("#CCAAAA"))
+                roomButton3.setText(R.string.empty)
+                roomButton3.setBackgroundColor(Color.parseColor("#AACCDD"))
             }
             invalidateAll()
         }
-
     }
 
 
